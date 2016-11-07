@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Hello Facebook</title>
+	</head>
+	<body>
+		<h4>Here is your spoken languages:</h4>
+		
+		<div th:each="lng:${lang}">
+			<b th:text="${lng}"></b>
+			<hr/>
+		</div>
+	</body>
+</html>
